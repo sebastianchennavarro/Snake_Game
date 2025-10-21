@@ -17,7 +17,7 @@ public class GameActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_game);
 
-        // Inicializar GameView
+        // Inicializar GameView /// testeting mi comment
         gameView = findViewById(R.id.gameView);
         scoreText = findViewById(R.id.scoreText);
         btnUp = findViewById(R.id.btnUp);
@@ -76,7 +76,7 @@ public class GameActivity extends AppCompatActivity {
                     });
 
                     try {
-                        Thread.sleep(100);
+                        Thread.sleep(99); //tees
                     } catch (InterruptedException e) {
                         e.printStackTrace();
                     }
