@@ -1,0 +1,51 @@
+{
+  "rules": {
+    "user_settings": {
+      "$username": {
+        ".read": "auth != null",
+        ".write": "auth != null"
+      }
+    },
+    "message": {
+      ".read": "auth != null",
+      ".write": "auth != null"
+    },
+    "scores": {
+      ".read": true,
+      ".write": "auth != null"
+    },
+    "global_scores": {
+      ".read": true,
+      ".write": "auth != null",
+      "$scoreId": {
+        ".validate": "newData.hasChildren(['score', 'username', 'timestamp', 'country']) && newData.child('score').isNumber() && newData.child('username').isString() && newData.child('timestamp').isNumber() && newData.child('country').isString()"
+      }
+    },
+    "country_scores": {
+      ".read": true,
+      "$country": {
+        ".write": "auth != null",
+        "$scoreId": {
+          ".validate": "newData.hasChildren(['score', 'username', 'timestamp', 'country']) && newData.child('score').isNumber() && newData.child('username').isString() && newData.child('timestamp').isNumber() && newData.child('country').isString()"
+        }
+      }
+    },
+    "user_scores": {
+      ".read": true,
+      "$username": {
+        ".write": "auth != null",
+        "$scoreId": {
+          ".validate": "newData.hasChildren(['score', 'username', 'timestamp', 'country']) && newData.child('score').isNumber() && newData.child('username').isString() && newData.child('timestamp').isNumber() && newData.child('country').isString()"
+        }
+      }
+    },
+    "user_coins": {
+      ".read": true,
+      "$username": {
+        ".write": "auth != null",
+        ".validate": "newData.isNumber() && newData.val() >= 0"
+      }
+    }
+  }
+}
+

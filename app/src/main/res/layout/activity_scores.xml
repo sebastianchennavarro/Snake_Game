@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#000000">
+
+    <!-- Título -->
+    <TextView
+        android:id="@+id/tvTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="TOP SCORES"
+        android:textSize="28sp"
+        android:textStyle="bold"
+        android:textColor="#00FF00"
+        android:fontFamily="@font/vcr_osd_mono_1_001"
+        android:gravity="center"
+        android:padding="16dp"
+        android:background="#1E1E1E"/>
+
+    <!-- Cabecera de la tabla -->
+    <LinearLayout
+        android:id="@+id/llHeader"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="12dp"
+        android:background="#2A2A2A">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Puesto"
+            android:textColor="#00FF00"
+            android:textStyle="bold"
+            android:textSize="16sp"
+            android:fontFamily="@font/vcr_osd_mono_1_001"
+            android:gravity="center" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:text="Nombre"
+            android:textColor="#00FF00"
+            android:textStyle="bold"
+            android:textSize="16sp"
+            android:fontFamily="@font/vcr_osd_mono_1_001"
+            android:gravity="center" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:text="Puntuación"
+            android:textColor="#00FF00"
+            android:textStyle="bold"
+            android:textSize="16sp"
+            android:fontFamily="@font/vcr_osd_mono_1_001"
+            android:gravity="center"/>
+    </LinearLayout>
+
+    <!-- Lista de puntuaciones -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvScores"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:paddingLeft="8dp"
+        android:paddingRight="8dp"
+        android:paddingTop="8dp"/>
+
+    <!-- Botones Global/Local -->
+    <LinearLayout
+        android:id="@+id/llButtons"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="16dp">
+
+        <Button
+            android:id="@+id/btnGlobal"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="GLOBAL"
+            android:textColor="#00FF00"
+            android:textSize="18sp"
+            android:background="#6A0DAD"
+            android:fontFamily="@font/vcr_osd_mono_1_001"
+            android:layout_marginEnd="8dp"/>
+
+        <Button
+            android:id="@+id/btnLocal"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="LOCAL"
+            android:textColor="#00FF00"
+            android:textSize="18sp"
+            android:background="#6A0DAD"
+            android:fontFamily="@font/vcr_osd_mono_1_001"
+            android:layout_marginStart="8dp"/>
+    </LinearLayout>
+
+</LinearLayout>

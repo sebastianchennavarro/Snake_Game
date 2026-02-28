@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "197281170457",
+    "project_id": "snake-cf616",
+    "storage_bucket": "snake-cf616.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:197281170457:android:e80072b3e4610b37a55688",
+        "android_client_info": {
+          "package_name": "com.example.test_snake"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCzPV__owYCd4vedQfYHKBLng8UQmIBm18"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

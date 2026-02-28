@@ -1,0 +1,42 @@
+<resources>
+    <!-- Estilos base -->
+    <style name="RetroButton" parent="Widget.AppCompat.Button">
+        <item name="android:background">@drawable/button_retro_style</item>
+        <item name="android:textColor">#00FF00</item>
+        <item name="android:fontFamily">@font/vcr_osd_mono_1_001</item>
+        <item name="android:gravity">center</item>
+        <item name="android:includeFontPadding">false</item>
+        <item name="android:letterSpacing">0.05</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <!-- Botón pequeño -->
+    <style name="RetroButton.Small" parent="RetroButton">
+        <item name="android:minHeight">36dp</item>
+        <item name="android:minWidth">80dp</item>
+        <item name="android:paddingStart">12dp</item>
+        <item name="android:paddingEnd">12dp</item>
+        <item name="android:paddingTop">6dp</item>
+        <item name="android:paddingBottom">6dp</item>
+    </style>
+
+    <!-- Botón mediano -->
+    <style name="RetroButton.Medium" parent="RetroButton">
+        <item name="android:minHeight">48dp</item>
+        <item name="android:minWidth">120dp</item>
+        <item name="android:paddingStart">16dp</item>
+        <item name="android:paddingEnd">16dp</item>
+        <item name="android:paddingTop">12dp</item>
+        <item name="android:paddingBottom">12dp</item>
+    </style>
+
+    <!-- Botón grande -->
+    <style name="RetroButton.Large" parent="RetroButton">
+        <item name="android:minHeight">56dp</item>
+        <item name="android:minWidth">160dp</item>
+        <item name="android:paddingStart">20dp</item>
+        <item name="android:paddingEnd">20dp</item>
+        <item name="android:paddingTop">16dp</item>
+        <item name="android:paddingBottom">16dp</item>
+    </style>
+</resources>

@@ -1,0 +1,12 @@
+# Folders and files to ignore in the whole project
+*.iml
+.gradle
+local.properties
+.DS_Store
+/build
+/captures
+.externalNativeBuild
+.cxx
+
+# Ignore the whole .idea folder
+/.idea

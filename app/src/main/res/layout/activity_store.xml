@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#121212"
+    android:padding="16dp">
+
+    <!-- Barra superior con monedas -->
+    <TextView
+        android:id="@+id/coinsTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="MONEDAS:"
+        android:textColor="#FFD700"
+        android:textSize="20sp"
+        android:fontFamily="@font/vcr_osd_mono_1_001" />
+
+    <TextView
+        android:id="@+id/coinsAmount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@id/coinsTitle"
+        android:layout_marginStart="8dp"
+        android:text="0"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+        android:fontFamily="@font/vcr_osd_mono_1_001" />
+
+    <!-- RecyclerView para la lista de skins -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/skinsRecyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/coinsTitle"
+        android:layout_marginTop="16dp" />
+
+</RelativeLayout>
